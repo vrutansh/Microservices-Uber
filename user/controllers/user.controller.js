@@ -1,5 +1,5 @@
 const userModel = require('../models/user.model');
-
+const blacklisttokenModel = require('../models/blacklisttoken.model');
 const bcrypt = require('bcrypt');
 const { error } = require('console');
 
