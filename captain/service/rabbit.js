@@ -17,6 +17,7 @@ async function subscribeToQueue(queueName, callback) {
     channel.consume(queueName, (message) => {
         callback(message.content.toString());
         channel.ack(message);
+        console.log(message,"message")
     });
 }
 

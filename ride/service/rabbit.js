@@ -6,6 +6,8 @@ let connection, channel;
 
 async function connect() {
 
+
+
     connection = await amqp.connect(RABBITMQ_URL);
     channel = await connection.createChannel();
     console.log('Connected to RabbitMQ');
